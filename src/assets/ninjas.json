@@ -1,0 +1,17 @@
+[
+  {"name": "Milan",
+   "belt": "red"
+},
+  {"name": "Mia",
+  "belt": "orange"
+},
+  {"name": "Milica",
+  "belt": "black"
+  },
+  {"name": "Ivan",
+    "belt": "yellow"
+  },
+  {"name": "Tea",
+   "belt": "gold"
+  }
+]

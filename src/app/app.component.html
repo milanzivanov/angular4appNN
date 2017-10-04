@@ -1,0 +1,23 @@
+<header fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayoutAlign="space-between stretch">
+    <h1>Angular</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/home"                                                    routerLinkActive="active">
+        Home
+      </a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active">
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section id="main" fxLayout="column">
+    <!-- input || output -->
+    <!-- <app-home [data]="data" (click)="output($event)"></app-home> -->
+    <router-outlet></router-outlet>
+</section>

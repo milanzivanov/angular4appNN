@@ -1,0 +1,31 @@
+<!-- <p>{{data.firstName}}</p> -->
+<!-- <p>{{data.lastName}}</p> -->
+<!-- <button (click)="fireOutput($event)">Hit me</button> -->
+<!-- <p [ngClass]="classes">
+  home work!!!
+</p> -->
+<h2>Ninja Listing</h2>
+<form id="filter">
+  <label>Search ninjas:</label>
+  <input type="text"
+         [(ngModel)]="term"
+         placeholder="serach"
+         name="term">
+</form>
+<ul id="ninja-listing">
+  <li *ngFor="let ninja of ninjas | filter:term">
+    <div class="single-ninja">
+      <!-- belt colour -->
+      <span [ngStyle]="{background: ninja.belt}">{{ninja.belt}} belt</span>
+      <!-- name -->
+      <h3>{{ninja.name}}</h3>
+      <!-- <div (click)="remove($event)" [attr.data-name]="ninja.name">delete</div> -->
+    </div>
+  </li>
+</ul>
+
+<form id="add-ninja">
+  <input type="text" [(ngModel)]="name" name="name" placeholder="name">
+  <input type="text" [(ngModel)]="belt" name="belt" placeholder="belt">
+  <button (click)="fbPostData(name, belt)">Add</button>
+</form>
